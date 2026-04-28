@@ -4,6 +4,8 @@ using namespace std;
 void hbd(string x ,int y);
 double square(double num);
 string fulname(string fname,string lname);
+void food (string pizza);
+void food (string pizza,string burger);
 
 int main(){
      
@@ -17,7 +19,9 @@ int main(){
 
     hbd(name,age);
     double are = square(length);
-
+    
+    food("pizza");
+    food("pizza","burger")
     cout<<"the area of the square is : "<<are<<endl;
     cout<<"the full name is : "<<fulname(First_name,Last_name)<<endl;
     return 0;
@@ -32,7 +36,16 @@ double square(double num){
     double result = num * num;
     return result;
 }
+
 string fulname(string fname,string lname){
     string fullname = fname + " " + lname;
     return fullname;
+}
+
+void food (string pizza){
+    cout<<"my favorite food is : "<<pizza<<endl;
+}
+
+void food(string pizza,string burger){
+    cout<<"my favorite food is : "<<pizza<<" and "<<burger<<endl;
 }
